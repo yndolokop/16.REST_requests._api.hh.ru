@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<!--<html lang="en">-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Только CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Парсер hh.ru</title>
+
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#" >
+      <img src="logo.png" alt="" width="100" height="88" >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка<img src="russia-hh-logo.png" alt="" width="40" height="28"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Выпадающий список
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Действие</a></li>
+            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container-md border border-1 border-light">
+        <div class="mt-4">
+            <h2>Парсер вакансий по навыкам на hh.ru</h2>
+        </div>
+        <h4>Информация о парсере</h4><br>
+        <p>Парсер осуществляет поиск вакансий с hh.ru и сортирует их по навыкам.</p>
+        <p>Поиск всегда осуществляется по ключевому слову и с учетом навыков прописаных в описании Вакансии. Навыки
+            выводятся при каждом запросе. Ключевое слово вводится в основном поле. Это может быть профессия или вид
+            деятельности.</p>
+        <p>В фильтрах есть дополнительные параметры поиска такие как регион и область деятельности, а также общий
+            параметр 'везде', при котором поиск будет осуществляться по всему сайту.</p>
+        <p>В фильтрах также можно сузить поиск по специализации, выбрав из выпадающего списка нужную область
+            деятельности. Например, во втором окне можем ввести один или несколько навыков, которые нас интересуют.</p>
+        <p>Парсер отсортирует все навыки, которые были найдены по ключевому слову во всех вакансиях по нисходящей
+            от более востребованных к менее востребованным.</p>
+        <p>Также планируется ввести поля для вывода 'id' вакансии и ссылки на саму вакансию на сайте hh.ru.</p>
+    </div>
+    <div class="container-md border">
+        <a href="form.html">Начать поиск</a>
+    </div>
+
+
+    <!-- Пакет JavaScript с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
 </body>
 </html>
+
+
